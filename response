@@ -1,0 +1,5 @@
+{% if response.RESPCODE == '01' %}
+        ORDER SUCCESS
+{% else %}
+        ORDER FAILURE
+{% endif%}

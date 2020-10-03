@@ -12,6 +12,7 @@ def handlerequest(request):
     verify = Checksum.verify_checksum(response_dict, MERCHANT_KEY, checksum)
     if verify:
         if response_dict['RESPCODE'] == '01':
+            print("   ")
             print('order successful')
         else:
             print('order was not successful because' + response_dict['RESPMSG'])
